@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import statsmodels.api as sm
 import funclib as fl
-
+#tetst
 
 #Where we set the parameters of the regression and the forecast
 rawData = pd.read_csv('stats.csv')
