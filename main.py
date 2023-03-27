@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import statsmodels.api as sm
 import funclib as fl
-
+from Output import output
 
 #Where we set the parameters of the regression and the forecast
 rawData = pd.read_csv('stats.csv')
@@ -223,8 +223,11 @@ for dataframe in df_list:
     row = row + len(dataframe.index) + 3 + 1
 
 
+
 writer.save()
-writer.close()
+#writer.close()
+
+output("output.xlsx")
         
         
 
